@@ -5,6 +5,7 @@ ruby '2.7.0'
 
 # Specific Gems
 gem 'dotenv-rails'
+gem 'slim-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
