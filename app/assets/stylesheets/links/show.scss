@@ -1,0 +1,17 @@
+.link-show {
+  h2 {
+    a {
+      color: #0082fc;
+      text-decoration: none;
+      transition: 0.3s;
+
+      &:hover {
+        color: #015baf;
+      }
+    }
+  }
+
+  p {
+    color: #aaa;
+  }
+}

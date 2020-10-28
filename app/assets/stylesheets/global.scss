@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1199.98px;
+  padding: 0 10px;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+}
+
+body, input, button {
+  font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+}
+
+.buttons {
+  display: flex;
+  margin: 20px 0;
+
+  a {
+    padding: 10px 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    color: #aaa;
+    text-decoration: none;
+    transition: .3s;
+
+    &:hover {
+      background-color: #aaa;
+      color: #fff;
+    }
+
+    & + a {
+      margin-left: 5px;
+    }
+  }
+}
