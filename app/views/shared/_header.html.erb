@@ -1,0 +1,27 @@
+<header>
+  <nav>
+    <h1><%= link_to 'Reddit', links_path %></h1>
+
+    <%= form_tag(links_path, method: :get, class: 'form-search') do |f| %>
+      <%= text_field_tag :term,
+        params[:term],
+        autocomplete: :off,
+        placeholder: 'Find link',
+        class: "input-search"
+      %>
+    <% end %>
+
+    <% if user_signed_in? %>
+      <ul>
+        <li><%= link_to 'Submit link', new_link_path %></li>
+        <li><%= link_to 'Account', edit_user_registration_path %></li>
+        <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+      </ul>
+    <% else %>
+      <ul>
+        <li><%= link_to 'Sign in', new_user_session_path, class: 'btn-sign-in' %></li>
+        <li><%= link_to 'Sign up', new_user_registration_path %></li>
+      </ul>
+    <% end %>
+  </nav>
+</header>

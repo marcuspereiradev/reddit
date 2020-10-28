@@ -1,22 +1,4 @@
-h1 Listing links
-
-table
-  thead
-    tr
-      th Title
-      th Url
-      th
-      th
-      th
-
-  tbody
-    - @links.each do |link|
-      tr
-        td = link.title
-        td = link.url
-        td = link_to 'Show', link
-        - if link.user == current_user
-          td = link_to 'Edit', edit_link_path(link)
-          td = link_to 'Destroy', link, data: { confirm: 'Are you sure?' }, method: :delete
-
-br
+- @links.each do |link|
+  .link
+    h2 = link_to link.title, link
+    p Submitted #{time_ago_in_words(link.created_at)} by #{link.user.email}
