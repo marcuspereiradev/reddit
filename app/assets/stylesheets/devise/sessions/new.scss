@@ -1,0 +1,78 @@
+.new_user_content {
+  max-width: 340px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+  }
+
+  .new_user {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+
+    .field label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .field input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      margin-bottom: 20px;
+    }
+
+    .field:nth-child(4) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      input {
+        margin: 0;
+        width: 20px;
+      }
+
+      label {
+        display: inline-block;
+        margin: 0;
+      }
+    }
+
+    .actions {
+      input {
+        background: #0082fc;
+        border: 1px solid #0082fc;
+        border-radius: 5px;
+        color: #eeeeee;
+        padding: 10px 30px;
+        transition: .3s;
+        width: 100%;
+
+        &:hover {
+          background: #015baf;
+        }
+      }
+    }
+  }
+
+  .new_buttons {
+    margin-top: 20px;
+    display: flex;
+
+    a {
+      color: #0082fc;
+      flex: 1;
+      font-size: 0.875em;
+      text-decoration: none;
+      transition: .3s;
+
+      &:hover {
+        color: #015baf;
+      }
+    }
+  }
+}
