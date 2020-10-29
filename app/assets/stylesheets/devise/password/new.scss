@@ -1,4 +1,4 @@
-.new_user_content {
+.new_password_content {
   max-width: 340px;
   margin: 0 auto;
 
@@ -26,29 +26,13 @@
       margin-bottom: 20px;
     }
 
-    .field:nth-child(4) {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-
-      input {
-        margin: 0;
-        width: 20px;
-      }
-
-      label {
-        display: inline-block;
-        margin: 0;
-      }
-    }
-
     .actions {
       input {
         background: #0082fc;
         border: 1px solid #0082fc;
         border-radius: 5px;
         color: #eeeeee;
-        padding: 10px 30px;
+        padding: 10px 0;
         transition: .3s;
         width: 100%;
 
@@ -59,7 +43,7 @@
     }
   }
 
-  .new_buttons {
+  .new_password_buttons {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
