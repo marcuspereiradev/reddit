@@ -1,4 +1,4 @@
-.new_user_content {
+.edit_registration_content {
   max-width: 340px;
   margin: 0 auto;
 
@@ -6,11 +6,19 @@
     text-align: center;
   }
 
-  .new_user {
+  .edit_user {
     border: 1px solid #eee;
     border-radius: 5px;
     margin-top: 20px;
     padding: 20px;
+
+    br {
+      display: none;
+    }
+
+    i, em {
+      font-size: 0.875em;
+    }
 
     .field label {
       display: block;
@@ -24,22 +32,6 @@
       border-radius: 5px;
       border: 1px solid #aaa;
       margin-bottom: 20px;
-    }
-
-    .field:nth-child(4) {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-
-      input {
-        margin: 0;
-        width: 20px;
-      }
-
-      label {
-        display: inline-block;
-        margin: 0;
-      }
     }
 
     .actions {
@@ -59,23 +51,31 @@
     }
   }
 
-  .new_buttons {
+  .cancel_account {
     margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
 
-    br {
-      display: none;
+    h3 {
+      color: red;
+      margin-bottom: 20px;
     }
 
-    a {
-      color: #0082fc;
-      font-size: 0.875em;
-      text-decoration: none;
+    p {
+      margin-bottom: 5px;
+    }
+
+    .button_to input {
+      width: 100%;
+      padding: 10px 0;
+      border: 1px solid red;
+      border-radius: 5px;
+      color: red;
+      background: none;
       transition: .3s;
 
       &:hover {
-        color: #015baf;
+        border-color: red;
+        color: white;
+        background: red;
       }
     }
   }
