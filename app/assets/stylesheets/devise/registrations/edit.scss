@@ -16,7 +16,8 @@
       display: none;
     }
 
-    i, em {
+    i,
+    em {
       font-size: 0.875em;
     }
 
@@ -41,7 +42,7 @@
         border-radius: 5px;
         color: #eeeeee;
         padding: 10px 30px;
-        transition: .3s;
+        transition: 0.3s;
         width: 100%;
 
         &:hover {
@@ -70,7 +71,7 @@
       border-radius: 5px;
       color: red;
       background: none;
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover {
         border-color: red;
