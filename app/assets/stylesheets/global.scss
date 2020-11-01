@@ -5,7 +5,7 @@
 .container {
   margin: 0 auto;
   max-width: 1199.98px;
-  padding: 0 10px;
+  width: 90%;
 }
 
 body {
@@ -27,10 +27,11 @@ h1, h2, h3, h4, h5, h6, strong {
   margin: 20px 0;
 
   a {
-    padding: 10px 30px;
+    padding: 5px 10px;
     border: 1px solid #aaa;
     border-radius: 5px;
     color: #aaa;
+    font-size: 0.875em;
     text-decoration: none;
     transition: .3s;
 
