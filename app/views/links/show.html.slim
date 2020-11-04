@@ -1,6 +1,6 @@
 .link-show
   h2 = link_to @link.title, @link.url
-  p Submitted #{time_ago_in_words(@link.created_at)} by #{@link.user.email}
+  p Submitted #{time_ago_in_words(@link.created_at)} by #{@link.user.name}
 
 .buttons
   = link_to 'Visit url', @link.url
@@ -13,3 +13,13 @@
       span Upvote #{@link.get_upvotes.count}
     = link_to dislike_link_path(@link), method: :put do
       span Downvote #{@link.get_downvotes.count}
+
+h3.comments_count #{@link.comments.count} comments
+
+== render :partial => 'comments/comment', locals: { comments: @link.comments}
+
+- if user_signed_in?
+  = simple_form_for [@link, Comment.new] do |f|
+    = f.text_area :body
+    .btn-comment
+      = f.submit "Add Comment"
