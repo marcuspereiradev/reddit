@@ -1,0 +1,42 @@
+.comments {
+  border-top: 1px solid #aaa;
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+
+  .comment_content {
+    p {
+      font-style: italic;
+    }
+
+    span {
+      color: #aaa;
+      font-size: .875em;
+    }
+  }
+
+  .btn-destroy-comment {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+
+    a {
+      padding: 5px 10px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      color: #aaa;
+      font-size: 0.875em;
+      text-decoration: none;
+      transition: .3s;
+
+      &:hover {
+        background-color: #aaa;
+        color: #fff;
+      }
+
+      & + a {
+        margin-left: 5px;
+      }
+    }
+  }
+}

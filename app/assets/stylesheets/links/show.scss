@@ -19,5 +19,38 @@
 .btn-votes {
     display: flex;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+.comments_count {
+  margin-bottom: 20px;
+}
+
+#comment_body {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #aaa;
+  margin: 10px 0 20px;
+  transition: .3s;
+
+  &:hover {
+    border-color: #0082fc;
+  }
+}
+
+.btn-comment {
+  input {
+    background: #0082fc;
+    border: 1px solid #0082fc;
+    border-radius: 5px;
+    color: #eeeeee;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: .3s;
+
+    &:hover {
+      background: #015baf;
+    }
+  }
 }

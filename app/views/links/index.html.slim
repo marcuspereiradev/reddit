@@ -1,7 +1,7 @@
 - @links.each do |link|
   .link
     h2 = link_to link.title, link
-    p Submitted #{time_ago_in_words(link.created_at)} by #{link.user.email}
+    p Submitted #{time_ago_in_words(link.created_at)} by #{link.user.name}
     .buttons
       = link_to like_link_path(link), method: :put do
         span Upvote #{link.get_upvotes.count}

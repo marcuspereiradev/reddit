@@ -1,0 +1,14 @@
+/ - @link.comments.map do |f|
+/   p #{f.body}
+/   p Submitted #{time_ago_in_words(f.created_at)} by #{f.user.name}
+/   - if @link.user == current_user
+/     = link_to 'Destroy', link_comment_path(f), data: { confirm: 'Are you sure?' }, method: :delete
+
+- comments.map do |comment|
+  .comments
+    .comment_content
+      p #{comment.body}
+      span Submitted #{time_ago_in_words(comment.created_at)} by #{comment.user.name}
+    - if comment.user == current_user
+      .btn-destroy-comment
+        = link_to 'Destroy', [@link, comment], data: { confirm: 'Are you sure?' }, method: :delete
