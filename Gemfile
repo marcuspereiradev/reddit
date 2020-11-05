@@ -54,8 +54,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Specific Gems
+gem 'acts_as_votable', '~> 0.12.1'
 gem 'devise'
 gem 'dotenv-rails'
-gem 'slim-rails'
-gem 'acts_as_votable', '~> 0.12.1'
+gem 'searchkick'
 gem 'simple_form'
+gem 'slim-rails'

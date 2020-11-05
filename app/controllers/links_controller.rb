@@ -5,7 +5,11 @@ class LinksController < ApplicationController
   # GET /links
   # GET /links.json
   def index
-    @links = Link.all
+    if params[:keyword].present?
+      @links = Link.search("%#{params[:keyword]}%")
+    else
+      @links = Link.all
+    end
   end
 
   # GET /links/1

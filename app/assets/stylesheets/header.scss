@@ -30,6 +30,10 @@ header {
         font-family: 'Merriweather', serif;
         transition: .3s;
 
+        &::placeholder {
+          color: #aaa;
+        }
+
         &:hover {
           border-color: #0082fc;
         }
